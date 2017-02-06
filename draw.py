@@ -60,7 +60,7 @@ while len(users) > 0:
 		users = users[len(subset):]
 
 # opens a file for output and writes there the results of the process
-with open('extraction_results.txt', 'w') as out_file:
+with open('selected_students.txt', 'w') as out_file:
 	for pair in chosen: 
 		print "--- Chosen user %s with score %d" % (pair[0], pair[1])
 		out_file.write('--- Chosen user ' + pair[0] + ' with score ' + str(pair[1]) + '\n')
