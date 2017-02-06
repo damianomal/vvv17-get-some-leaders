@@ -4,8 +4,8 @@ import argparse
 import sys
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-n", "--number", type=int, help="number of users to extract", default=3)
-parser.add_argument("-f", "--file", type=str, help="Gradebook.md file to be processed", default='final-gradebook.md')
+parser.add_argument("-n", "--number", type=int, help="number of users to extract (default: 3)", default=3)
+parser.add_argument("-f", "--file", type=str, help="Gradebook.md file to be processed (default: ../final-gradebook.md)", default='../final-gradebook.md')
 args = parser.parse_args()
 
 # by default, extracts 3 users from the 'final-gradebook.md' file
